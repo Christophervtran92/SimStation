@@ -26,5 +26,20 @@ public class Simulation extends Model {
     }
 
     // etc.
+    //Based on the information from the assignment, it says that the start() just calls the start function
+    //from the agent, this is under the assumption that there is an array list of agents within Simulation
+    public void start()
+    {
+        for(Agent a : agentList)
+            a.start();
+    }
+    
+    //Same as above.
+    public void stop()
+    {
+        for(Agent a : agentList)
+            a.stop();
+    }
+
 
 }
